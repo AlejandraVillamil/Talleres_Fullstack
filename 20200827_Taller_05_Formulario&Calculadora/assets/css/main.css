@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+main {
+    margin: 1vw;
+    padding: 2vw;
+}
+
+.banner {
+    text-align:center;
+    background-color: gray;
+    padding: 3vw;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    margin: 2px;
+    padding: 1vw;  
+    align-items: center;
+    justify-content: center;
+}
+.button_op{
+    font-size: 4rem;
+    width:15vw;
+    height: 10vw;
+    padding: 1vw;   
+}
+
+section{
+    margin: 1vw;
+    padding: 1vw;
+}
+/*****CALCULADORA****/
+#n1, #n2{
+   font-size: 5vw;
+   width:30.1vw;
+   height: 8vw;
+   text-align:center;
+}
+/*****FORMULARIO****/
+.input_field{
+    display:flex;
+    flex-direction:column;
+}
+.container2{
+    padding:2vw;
+    margin:auto;
+    width:30%;
+}
+.alerta_sub{
+    color:rgb(184, 58, 58);
+    font-size: small;
+    font-style: italic;
+}
+.input_btn{
+    margin:auto;
+    width:5vw;
+    background-color: black;
+    font-size:1rem ;
+    border-width:1px ;
+    border-color:black;
+    border-radius: 0.3vw;
+    color:whitesmoke;
+    padding:1vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input_btn:hover{
+    background-color: rgb(32, 31, 31);
+    transform: scale(1.2);
+}
+.input_box{
+    border-color:rgb(175, 171, 171);
+    background-color:rgb(248, 246, 246);
+    border-width:1px ;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    padding:1vw;
+}
+.input_tyc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input_tyc>label{
+  order:2;  
+}
+.input_box:focus { 
+    outline: none;
+    border-color: #bb8a2f;
+    box-shadow: 0 0 10px #bb8a2f;
+}
+
+.input_box_alert { 
+    outline: none;
+    border-color: #774040;
+    box-shadow: 0 0 10px  #774040;
+    background-color:#d6bdbd;
+}
+
+.input_field{
+    padding:.6vw;
+    margin:auto;
+}
+.input_field>label{
+    padding:.5vw;
+    font-size: 1.2vw;
+    font-style: italic;
+}

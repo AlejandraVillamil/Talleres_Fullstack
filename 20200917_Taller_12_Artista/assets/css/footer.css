@@ -1,0 +1,13 @@
+/***********Footer**************/
+.myfooter{
+    text-align: center;
+    background: #bb8a2f;
+    padding: 1vw; 
+}
+
+.footer_text{
+    font-size: 0.8rem;
+    font-style: italic;
+
+}
+

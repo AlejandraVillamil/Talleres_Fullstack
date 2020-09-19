@@ -1,0 +1,90 @@
+*{
+    padding:0px;
+    margin:0px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    background: url(../src/images/background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align-last: center;
+   }
+
+.photo{
+    width: 15vw;
+    border-radius: 15rem;
+    border-color:whitesmoke;
+    border-style: solid;
+    border-width: 1vw;
+}
+.button_photo{
+background-color:transparent;
+border-style: none;
+
+
+}
+.edit{
+
+    width: 1.5vw;
+
+}
+.buttom_edit{
+
+    background-color:transparent;
+    border-style: none;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    padding:1vw;
+
+}
+.data{
+font-family: Courier;
+font-size:2rem ;
+color:whitesmoke;
+}
+
+.detail{
+color:grey;
+font-style: italic;
+font-size:.7rem;
+}
+
+.title{
+    font-size:3rem ;
+    color: rgba(0,0,0,0.9);
+    font-family: Courier;
+}
+
+.container{
+    width:50vw;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    background-color: rgba(0,0,0,0.9);
+    padding:3vw;
+    margin:2vw;
+
+}
+
+header{
+    padding:4vw;
+    margin:2vw;
+
+}
+
+.card{
+
+flex-grow: 4;
+}
+.label{
+font-style: italic;
+color:rgb(71, 69, 69);
+text-align: center;
+font-size:.7rem;
+}
+

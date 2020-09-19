@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 4 </title>
+    <link rel="icon" type="image/png" href="../../assets/src/images/Logo.png">
+    <link href="../../assets/css/header.css" rel="stylesheet" />
+    <link href="../../assets/css/main.css" rel="stylesheet" />
+    <link href="../../assets/css/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!----------------------------- Inicio cabecera ------------------------------------->
+    <nav class="navbar navSticky">
+        <!--Logo de página-->
+        <div class="Container-Logo">
+            <a href="#">
+                <img src="../../assets/src/images/Logo.png">
+            </a>
+        </div>
+       <!--Barra de navegación-->
+        <div class="nav" id="">
+                <ul class="">
+                <li class=""><a class="" href="../../index.html">Formulario</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!------------------------------- Fin cabecera --------------------------------------> 
+
+    <!-------------------------------- Inicio Main  ------------------------------------->
+    <main>
+        <!--banner -->
+       <section class="banner">
+            Taller 4 - Calculadora
+        </section>
+
+        <!--bloque 1 -->
+        <div class="container">
+            <section >
+                        <input type="number" id="n1" required>
+                        <input type="number" id="n2" required>
+            </section>
+
+            <section>
+                        <button class="button_op" onclick="operaciones('suma')">+</button>
+                        <button class="button_op" onclick="operaciones('resta')">-</button>
+                        <button class="button_op" onclick="operaciones('multiplicacion')">x</button>
+                        <button class="button_op" onclick="operaciones('division')">/</button>
+
+            </section>
+
+        </div>
+        <div class="container">
+            <section class="mensaje" id="msg">
+                El resultado es: 
+                <h2 id="resultado"> </h2>
+            </section>
+        </div>
+
+    </main>
+    <!-------------------------------- Fin Main  ------------------------------------->
+
+    <!------------------------------ Inicio Footer ----------------------------------->
+    <footer>
+           <p class="footer_text">Elaborado por Alejandra Villamil el 26 de agosto de 2020</p> 
+
+    </footer>
+    <!------------------------------ Inicio Footer ----------------------------------->
+
+    <script src="../../assets/scripts/operaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taller 03</title>
+</head>
+<body>
+    <header>   
+         <h1 class="title">
+              Información artista
+     </h1>
+     <h5 class="detail"> Taller 03 - Alejandra Villamil</h5>
+    </header>
+
+    <section class="container">
+        
+        <button class="button_photo"  onclick="askInfo()"><img class="photo" src="src/images/at.jpg"></button>
+        <div class="card">
+            <!-- Nombre -->
+            <p class="text">
+                <div id="name_onscreen" class="data"></div>          
+                <h5 class="label">Nombre
+                <button onclick="pedirNombre()" id="btnNombre" class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>
+            </p> 
+
+             <!-- Apodo -->          
+            <p class="text">
+                <div id="nick_onscreen" class="data"></div>
+                <h5 class="label"> Apodo 
+                <button id="btnApodo" class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>       
+            </p>    
+
+              <!-- Signo -->    
+            <p class="text">
+            <div id="zodiac_onscreen" class="data"></div> 
+            <h5 class="label"> Signo zodiacal 
+            <button id="btnSigno" class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>     
+            </p>
+
+            <!-- Edad -->
+            <p class="text">
+            <div id="age_onscreen" class="data"></div>
+            <h5 class="label"> Edad 
+            <button onclick="pedirEdad()"  class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>  
+      
+            </p>
+
+        </div>
+        
+
+     </section>
+
+
+    <script src="scripts/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 5 </title>
+    <link rel="icon" type="image/png" href="./assets/src/images/Logo.png">
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!----------------------------- Inicio cabecera ------------------------------------->
+    <nav class="navbar navSticky">
+        <!--Logo de página-->
+        <div class="Container-Logo">
+            <a href="#">
+                <img src="./assets/src/images/Logo.png">
+            </a>
+        </div>
+        <!--Barra de navegación-->
+        <div class="nav" id="">
+                <ul class="">
+                <li class=""><a class="" href="assets/pages/calculadora.html">Calculadora</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!------------------------------- Fin cabecera --------------------------------------> 
+
+    <!-------------------------------- Inicio Main  ------------------------------------->
+    <main>
+        <!--banner -->
+       <section class="banner">
+            Taller 5 - Formulario
+        </section>
+
+        <!--bloque 1 -->
+        <div class="container2">
+
+                    <form onsubmit="validar(event)">
+                        <div class="input_field">
+                            <label>Nombre completo</label>
+                            <input type="text" id="nombre" class="input_box">
+                            <small id="alerta_nombre" class="alerta_sub"></small>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Correo electrónico</label>
+                            <input type="email" id="mail"class="input_box">
+                            <small id="alerta_mail" class="alerta_sub"></small>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Edad</label>
+                            <input type="number" id="edad"class="input_box">
+                            <small id="alerta_edad" class="alerta_sub"></small>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Dirección</label>
+                            <input type="text" id="direccion"class="input_box">
+                            <small id="alerta_direccion" class="alerta_sub"></small>
+                        </div>
+
+                        <div class="input_field input_tyc">
+                            <label for="tyc">Aceptar términos y condiciones</label>
+                            <input type="checkbox" id="tyc"class="input_box">
+                        </div>
+
+                        <div class="input_field">
+                             <input type="submit" value="Enviar"class="input_btn">
+                        </div>
+                    </form>
+
+        </div>
+
+    </main>
+    <!-------------------------------- Fin Main  ------------------------------------->
+
+    <!------------------------------ Inicio Footer ----------------------------------->
+    <footer>
+           <p class="footer_text">Elaborado por Alejandra Villamil el 27 de agosto de 2020</p> 
+
+    </footer>
+    <!------------------------------ Inicio Footer ----------------------------------->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/scripts/validacion.js"></script>
+</body>
+</html>

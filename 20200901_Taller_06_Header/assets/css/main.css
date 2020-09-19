@@ -1,0 +1,16 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+main {
+    margin: 1vw;
+    padding: 2vw;
+}
+
+li a{
+  color:white;  
+}
+
+li a:hover{
+    color:rgb(185, 183, 183);  
+  }
