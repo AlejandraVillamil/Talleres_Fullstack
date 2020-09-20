@@ -61,7 +61,7 @@ const AddNewTaskToStorage = (NewTask) => {
 //
 const current_tsk = JSON.parse(localStorage.getItem('AllTasks')) 
 console.log(current_tsk) 
-
+TaskTable.innerHTML=""
 for (let c = 0; c < current_tsk.length; c += 1) {
 
 TaskTable.innerHTML += `
