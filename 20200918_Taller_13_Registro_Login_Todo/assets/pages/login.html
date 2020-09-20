@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller 8 </title>
+  <title>Taller 13 </title>
   <link rel="icon" type="image/png" href="../src/images/Logo.png">
   <link href="../css/header.css" rel="stylesheet" />
   <link href="../css/main.css" rel="stylesheet" />
   <link href="../css/footer.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -21,7 +22,7 @@
       <nav class="navbar navbar-light  Container-Logo text-center">
           
           <a class="navbar-brand " href="#">
-            <img src="./assets/src/images/Logo.png" width="80" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../src/images/Logo.png" width="80" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
            </a>Taller 13 - Registro, login y ToDo
         </nav>   
       <nav class="menu">
@@ -44,32 +45,33 @@
 
     <!-------------------------------- Inicio Main  ------------------------------------->
 
-    <main class="py-5">
+    <main class="py-5 ">
       <div class="row">
-        <div class="col-lg-9 mx-auto pb-5">
-          <div class="bg-white rounded-lg shadow-sm p-5">
-            <h2>Lista de usuario</h2>
-            <div class="wrapper fadeInDown">
-              <div id="formContent">
+        <div class="d-flex col mx-auto pb-5 justify-content-center">
+                <div id="formContent" >
                 <!-- Tabs Titles -->
-            
+              <br>
+
+
+                <div class="wrapper fadeInDown">
                 <!-- Icon -->
                 <div class="fadeIn first">
-                  <img src="assets/img/bictia.jpg" id="icon" alt="User Icon" />
+                  <img src="../src/images/Logo.png" id="icon" />
+
                 </div>
             
                 <!-- Login Form -->
-                <form onsubmit="storagedata()">
-                  <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                  <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
-                  <input type="submit" id="go" class="fadeIn fourth" value="Log In" >
+                <form onsubmit="storagedata(event)">
+                  <input type="email" id="loginMail" name="login" placeholder="Correo electrónico">
+                  <input type="password" id="loginPassword"  name="login" placeholder="Contraseña">
+                  <input type="submit" id="go"  value="Ingresar" >
                 </form>
             
               </div>
             </div>
           </div>
         </div>
-      </div>
+
     </main>
     <!-------------------------------- Fin Main  ------------------------------------->
     <!------------------------------ Inicio Footer ----------------------------------->
@@ -79,7 +81,7 @@
     </footer>
     <!------------------------------ Inicio Footer ----------------------------------->
   </section>
-  <script src="../scripts/storage.js"></script>
+  <script src="../scripts/login.js"></script>
   <script src="../scripts/script.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

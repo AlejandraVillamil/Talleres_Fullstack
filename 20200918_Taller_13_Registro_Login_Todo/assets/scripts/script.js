@@ -106,6 +106,7 @@ const AddToStorage=(Artist)=>{
         ArtistList.push(Artist)
         // alamacena los datos del artista en un string & Enviar string al localStorage
         localStorage.setItem('Artistas', (JSON.stringify(ArtistList)))
+        
 
     }else{
         //Formatear string del localStorage
@@ -115,7 +116,10 @@ const AddToStorage=(Artist)=>{
         // alamacena los datos del artista en un string & Enviar string al localStorage
         localStorage.setItem('Artistas', (JSON.stringify(ArtistList)))
     }
-
+    swal("Muy bien!", "Registro éxitoso", "success");
+    setTimeout(()=>{
+            window.location='assets/pages/login.html'
+    },2000)
 }
 
 

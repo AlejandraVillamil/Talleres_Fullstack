@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller 8 </title>
+  <title>Taller 13 </title>
   <link rel="icon" type="image/png" href="../src/images/Logo.png">
   <link href="../css/header.css" rel="stylesheet" />
   <link href="../css/main.css" rel="stylesheet" />
   <link href="../css/footer.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -21,7 +22,7 @@
       <nav class="navbar navbar-light  Container-Logo text-center">
           
           <a class="navbar-brand " href="#">
-            <img src="./assets/src/images/Logo.png" width="80" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../src/images/Logo.png" width="150" height="auto" class="d-inline-block align-top" alt="" loading="lazy">
            </a>Taller 13 - Registro, login y ToDo
         </nav>   
       <nav class="menu">
@@ -44,33 +45,112 @@
 
     <!-------------------------------- Inicio Main  ------------------------------------->
 
-    <main class="py-5">
-      <div class="row">
-        <div class="col-lg-9 mx-auto pb-5">
-          <div class="bg-white rounded-lg shadow-sm p-5">
-            <h2>Lista de usuario</h2>
-            <table class="table table-dark">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Banda</th>
-                  <th scope="col">Género</th>
-                  <th scope="col">Correo</th>
-                </tr>
-              </thead>
-              <tbody id="ArtistTable">
+    <main class="vh-90">
+      <div class="d-flex flex-row p-3">
 
-              </tbody>
-            </table>
-
-
-            <button type="button" class="btn btn-danger" id="clean">Limpiar</button>
-
+      <aside class="p-3 bd-highlight">
+        <div class="card vh-100">
+          <img src="../src/images/avatar.jpg" style="width: 25rem;" class="card-img-top rounded-circle  border border-warning m-4" alt="...">
+          <div class="card-body" >
+          <div id="User_Profile">
           </div>
+            <a href="#" class="btn btn-dark m-5 p-3" onclick="AddList()">Agregar una lista</a> 
+            
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Example multiple select</label>
+              <select multiple class="form-control" id="toDoLists">
+                <option class="listNumber">Lista 1</option>
+                <br>  
+              </select>
+            </div>
+          </div>      
         </div>
+        <div class="d-flex col" id="lists"></div>
+
+      </aside>   
+      
+      
+    <section class="container p-2 flex-grow-3 bd-highlight">
+      <div class="container bg-dark p-3">
+     <div class="p-1"><h2 class="p-3">Agregar nuevas tareas</h2>
+      
+      <p class="form-control" id="TskName"></p>
+
+      
+      <p class="d-flex justify-content-center m-3">
+        <button class="key rounded btn-dark border border-white p-3 m-1">Q</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">W</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">E</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">R</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">T</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">Y</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">U</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">I</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">O</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">P</button>
+        <button class="key Del_key rounded btn-danger border border-white p-3 m-1"><--</button>
+      </p>
+
+      <p class="d-flex justify-content-center m-3">
+      <button class="key rounded btn-dark border border-white p-3 m-1">A</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">S</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">D</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">F</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">G</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">H</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">J</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">K</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">L</button>
+      <button class="key rounded btn-dark border border-white p-3 m-1">Ñ</button>
+      </p>
+      <p class="d-flex justify-content-center m-3">
+        <button class="key rounded btn-dark border border-white p-3 m-1">Z</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">X</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">C</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">V</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">B</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">N</button>
+        <button class="key rounded btn-dark border border-white p-3 m-1">M</button>
+
+
+      </p>
+      <p class="d-flex justify-content-center m-0">
+        <button class="key Espace_key rounded btn-dark border border-white p-3 m-1">Espacio</button>
+        <button class="Send_key rounded btn-success border border-white p-3 m-1" onclick="AddNewTask()">Agregar</button>
+
+
+
+      </div>
+    
+    </div>
+
+
+     <div class="p-2"><h2 class="p-5">Mi lista de tareas</h2>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tarea</th>
+
+          </tr>
+        </thead>
+        <tbody id="Task_Table">
+
+        </tbody>
+      </table>
+
+    
+    
+    </div>
+
+        
+      </section> 
+
+
       </div>
     </main>
+    <br>
     <!-------------------------------- Fin Main  ------------------------------------->
     <!------------------------------ Inicio Footer ----------------------------------->
     <footer class="fixed-bottom  page-footer font-small blue pt-4 myfooter">
@@ -80,7 +160,7 @@
     <!------------------------------ Inicio Footer ----------------------------------->
   </section>
   <script src="../scripts/storage.js"></script>
-  <script src="../scripts/script.js"></script>
+  <script src="../scripts/keyboard.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
