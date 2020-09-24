@@ -1,0 +1,24 @@
+
+  #icon {
+    width:30%;
+    padding:.3vw;
+  }
+  #go{
+      margin:5vw;
+  }
+
+  /*KEYBOARD*/
+
+  .key{
+    height:70px;
+    width:70px;
+    font-size: 6px;
+  } 
+
+.darkTheme{
+  background-image: url("../src/images/bg.png");
+}
+
+.retoTheme{
+  background-image: url("../src/images/bg2.png");
+}

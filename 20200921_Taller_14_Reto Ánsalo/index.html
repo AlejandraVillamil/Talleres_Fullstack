@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller 14 </title>
+  <link rel="icon" type="image/png" href="./assets/src/images/Logo.png">
+  <link href="assets/css/header.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/footer.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body onload="applyTheme()">
+  <section class="container-fluid p-0">
+    <!----------------------------- Inicio cabecera ------------------------------------->
+    <header>
+      <nav class="navbar navbar-light  Container-Logo text-center">
+        <a class="navbar-brand " href="#">
+          <img src="./assets/src/images/Logo.png" width="80" height="auto" class="d-inline-block align-top" alt=""
+            loading="lazy">
+        </a>Taller 14 - Reto Ánsalo
+      </nav>
+      <nav class="menu">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Reto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!------------------------------- Fin cabecera -------------------------------------->
+
+    <!-------------------------------- Inicio Main  ------------------------------------->
+    <main class="pb-5 pt-3" id="themeContainer">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-4 mx-auto pb-5">
+          <div class=" bg-white rounded-lg shadow-sm p-2">
+            <img src="./assets/src/images/icono.png" width="auto" height="80vw">
+            <h2>Reto Ánsalo</h2>
+            <section class="d-flex flex-column p-3">
+            <label for="lettersInput">Letras</label>
+            <p class="form-control" id="lettersInput"></p>
+            <label for="numbersInput">Números</label>
+            <p  class="form-control" id="numbersInput"></p>
+          </section>
+          <section class="d-flex flex-column p-3">
+             <!-------------------------------- Selector de tema ------------------------------------->
+            <div class="themeSelector custom-control custom-switch d-flex flex-row-reverse">
+              <input type="checkbox" class="custom-control-input retoTheme" id="retoTheme" onclick="getThemeStorage()">
+              <label class="custom-control-label" for="retoTheme">Retro</label>
+            </div>
+            <div class="themeSelector custom-control custom-switch d-flex flex-row-reverse">
+              <input type="checkbox" class="custom-control-input" id="darkTheme" onclick="getThemeStorage()">
+              <label class="custom-control-label" for="darkTheme">Tema oscuro</label>
+            </div>
+          </section>
+            <div>
+              <!--------------------------------------TECLADO---------------------------------------->
+              <!-------------------------------- Primera línea  ------------------------------------->
+              <p class="d-flex justify-content-around m-2">
+                <button class="key rounded-circle btn border border-grey p-3" Value="1">A-1</button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="2">B-2</button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="3">C-3</button>
+              </p>
+              <!-------------------------------- Segunda línea  ------------------------------------->
+              <p class="d-flex justify-content-around m-2">
+                <button class="key rounded-circle btn border border-grey p-3" Value="4">D-4</button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="5">E-5</button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="6">F-6</button>
+              </p>
+              <!-------------------------------- Tercera línea  ------------------------------------->
+              <p class="d-flex justify-content-around m-2">
+                <button class="key rounded-circle btn border border-grey p-3" Value="7">G-7</button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="8">H-8</button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="9">I-9</button>
+              </p>
+              <!-------------------------------- Cuarta línea  ------------------------------------->
+              <p class="d-flex d-flex justify-content-around m-2">
+                <button class="key rounded-circle btn border border-grey p-3" Value="null"></button>
+                <button class="key rounded-circle btn border border-grey p-3" Value="10">J-0</button>
+                <button class="key Del_key rounded-circle btn border border-grey p-3" Value="del">Reset</button>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <!-------------------------------- Fin Main  ------------------------------------->
+    <!------------------------------ Inicio Footer ----------------------------------->
+    <footer class="fixed-bottom  page-footer font-small blue pt-4 myfooter">
+      <p class="footer_text">Elaborado por Alejandra Villamil el 21 de septiembre de 2020</p>
+
+    </footer>
+    <!------------------------------ Inicio Footer ----------------------------------->
+  </section>
+  <script src="assets/scripts/reto.js"></script>
+  <script src="assets/scripts/calculadora.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
