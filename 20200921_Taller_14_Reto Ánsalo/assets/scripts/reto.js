@@ -11,7 +11,6 @@ let nav
 localStorage.setItem('Input', "text")
 localStorage.setItem('process', "Inprogress")
 
-let btnkey = document.getElementById('key')
 
 //Escribir letras en pantalla
 document.querySelectorAll('.key').forEach(item => {

@@ -15,10 +15,33 @@
     font-size: 6px;
   } 
 
+  .calc_key{    
+    height:70px;
+    width:70px;
+    font-size: 6px;
+  }
+
 .darkTheme{
   background-image: url("../src/images/bg.png");
 }
 
 .retoTheme{
   background-image: url("../src/images/bg2.png");
+}
+
+.btn-calc{
+  height:70px;
+  width:70px;
+  font-size:1rem;
+}
+
+.calc-bx{
+background-color: rgb(75, 72, 72);
+
+}
+
+.bgblack{
+  background-color:rgb(100, 93, 93);
+  color:white;
+
 }
